@@ -38,7 +38,7 @@ links.forEach(function(link){
 
     // redirecciona despues de cierto tiempo una sola vez
     setTimeout(function(){
-      location.href = "/";
+      location.href = "/proyecto2";
     },500);
     // setInternal (despues de cierto tiempo constantemente)
     return false;
