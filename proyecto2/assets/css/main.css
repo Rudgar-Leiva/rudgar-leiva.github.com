@@ -1,0 +1,169 @@
+/*
+rosado: #ED0C9C
+Morado suave: E50CF7
+Morado fuerte: #9201E0
+Mordoazulado: #650CF7
+azul: #230CED
+rosa: #d500f9
+   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+*/
+
+html{
+  font-family: 'Oswald', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #d500f9;
+}
+
+img{
+  max-width: 100%;
+}
+
+a:hover{
+  opacity: 0.4;
+}
+
+a:focus{
+  background: red;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container{
+  background: #650CF7;
+  background: -webkit-linear-gradient(to right, #360033, #0b8793);
+  background: linear-gradient(to right, #360033, #0b8793);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  max-width: 960px;
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color;*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+  position: relative;
+  overflow: scroll;
+}
+
+.content{
+  padding: 1em;
+}
+
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-size: bold;
+  color: #360033;
+}
+th{
+  display: none;
+}
+
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close{
+  height: 40px;
+  width:  40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #0b8793;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+.fa-star{
+  color: #ffc400;
+}
+
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+
+.table tr:nth-child(even){ background-color: #f3e5f5;}
+
+.title-item{
+  /*border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #650CF7;*/
+  font-size: 2em;
+  border-bottom: solid 2px #650CF7;
+  padding-bottom: 1em;
+}
+
+.Sinopsis{
+  font-weight: bold;
+  color: #360033;
+  font-size: 1.5em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
+.main-images{
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+
+.position{
+  background-color: #360033;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5e
+}
+
+@media (min-width:900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  .content{
+    padding: 1.8em;
+  }
+}
+
+@media (min-height:500px){
+  .content{
+    height: 500px;
+  }
+}
